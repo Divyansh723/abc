@@ -1,0 +1,45 @@
+{
+  "name": "habitforge-backend",
+  "version": "1.0.0",
+  "description": "Backend API for HabitForge habit tracking application",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "echo 'No build step needed for Node.js'",
+    "test": "jest",
+    "seed:challenges": "node src/scripts/seedChallenges.js",
+    "test:notifications": "node test-notifications-scheduler.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "habit-tracking",
+    "mongodb",
+    "express",
+    "api"
+  ],
+  "author": "HabitForge Team",
+  "license": "MIT"
+}
